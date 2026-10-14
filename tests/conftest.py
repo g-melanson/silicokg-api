@@ -16,11 +16,11 @@ import pytest_asyncio
 from unittest.mock import AsyncMock
 from httpx import AsyncClient, ASGITransport
 
-from app.main import app
-from app.dependencies import get_graph_service
-from app.repositories.graph_repository import RepositoryService
-from app.security.query_guard import CypherQueryGuard
-from app.services.graph_service import GraphService
+from silicokg_api.main import app
+from silicokg_api.dependencies import get_graph_service
+from silicokg_api.repositories.graph_repository import RepositoryService
+from silicokg_api.security.query_guard import CypherQueryGuard
+from silicokg_api.services.graph_service import GraphService
 
 TEST_API_KEY = "test-api-key"
 

@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, Request
-from app.dependencies import get_graph_service
-from app.limiter import limiter
-from app.security.auth import get_api_key
-from app.services.graph_service import GraphService
-from app.schemas.query import CypherQueryRequest, CypherQueryResponse
-from app.config import settings
+from silicokg_api.dependencies import get_graph_service
+from silicokg_api.limiter import limiter
+from silicokg_api.security.auth import get_api_key
+from silicokg_api.services.graph_service import GraphService
+from silicokg_api.schemas.query import CypherQueryRequest, CypherQueryResponse
+from silicokg_api.config import settings
 
 router = APIRouter()
 

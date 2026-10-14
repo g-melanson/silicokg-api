@@ -8,9 +8,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 
-from app.config import settings
-from app.limiter import limiter
-from app.api.v1.routes.query import router as query_router
+from silicokg_api.config import settings
+from silicokg_api.limiter import limiter
+from silicokg_api.api.v1.routes.query import router as query_router
 
 
 # ---------------------------------------------------------------------------
