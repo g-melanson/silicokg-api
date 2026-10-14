@@ -1,8 +1,8 @@
 import time
 import structlog
-from app.repositories.graph_repository import RepositoryService
-from app.schemas.query import CypherQueryRequest, CypherQueryResponse
-from app.security.query_guard import CypherQueryGuard
+from silicokg_api.repositories.graph_repository import RepositoryService
+from silicokg_api.schemas.query import CypherQueryRequest, CypherQueryResponse
+from silicokg_api.security.query_guard import CypherQueryGuard
 
 log = structlog.get_logger()
 

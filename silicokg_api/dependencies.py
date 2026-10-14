@@ -1,9 +1,9 @@
 import neo4j
 from fastapi import Request
-from app.config import settings
-from app.repositories.graph_repository import Neo4JAsyncGraphRepository
-from app.security.query_guard import CypherQueryGuard
-from app.services.graph_service import GraphService
+from silicokg_api.config import settings
+from silicokg_api.repositories.graph_repository import Neo4JAsyncGraphRepository
+from silicokg_api.security.query_guard import CypherQueryGuard
+from silicokg_api.services.graph_service import GraphService
 
 
 def get_neo4j_driver(request: Request) -> neo4j.AsyncDriver:

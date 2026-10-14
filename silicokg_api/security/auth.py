@@ -1,6 +1,6 @@
 import hmac
 from fastapi import Header, HTTPException, status
-from app.config import settings
+from silicokg_api.config import settings
 
 
 async def get_api_key(x_api_key: str | None = Header(default=None, alias="X-API-Key")) -> str:
